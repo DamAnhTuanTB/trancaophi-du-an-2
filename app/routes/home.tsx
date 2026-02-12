@@ -3,8 +3,8 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Trần Cao Phi" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Dự án 2 - Trần Cao Phi" },
+    { name: "description", content: "Dự án 2 - Trần Cao Phi" },
   ];
 }
 
