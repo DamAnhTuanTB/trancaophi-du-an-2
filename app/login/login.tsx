@@ -21,8 +21,12 @@ export function Login() {
               </div>
             </div>
             <div className="content_1">or use your account</div>
-            <div className="rectangle">Email</div>
-            <div className="rectangle">Password</div>
+            <input className="rectangle" type="text" placeholder="Email" />
+            <input
+              className="rectangle"
+              type="password"
+              placeholder="Password"
+            />
             <div className="content_2">Forgot your password?</div>
             <div>LOG IN</div>
           </div>
