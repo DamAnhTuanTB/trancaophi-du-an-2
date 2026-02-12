@@ -24,6 +24,7 @@ import banhNgotContentThree from "./images/banh-ngot-content-three.png";
 import banhNgotNhoContentThree from "./images/banh-ngot-nho-content-three.png";
 import hambogoContentThree from "./images/hambogo-content-three.png";
 // import icon1Content4 from "./images/icon-1-content-4.png"; // File missing, using icon-2 as temporary replacement
+import { useNavigate } from "react-router";
 import icon1Content6 from "./images/icon-1-content-6.png";
 import icon1Content7 from "./images/icon-1-content-7.png";
 import icon1Fooder from "./images/icon-1-fooder.png";
@@ -62,6 +63,7 @@ import "./index.css";
 const icon1Content4 = icon2Content4; // Temporary workaround for missing file
 
 export function Welcome() {
+  const navigate = useNavigate();
   return (
     <>
       {/* HEADER */}
@@ -88,7 +90,7 @@ export function Welcome() {
           </div>
           <div className="buttum-two">
             <img src={iconNguoiButtumHeader} alt="" />
-            <div>Login</div>
+            <div onClick={() => navigate("/login")}>Login</div>
           </div>
         </div>
       </div>
