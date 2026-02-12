@@ -1,89 +1,824 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
-
+import anh1Content4 from "./images/anh-1-content-4.png";
+import anh2Content4 from "./images/anh-2-content-4.png";
+import anh3Content4 from "./images/anh-3-content-4.png";
+import anh4Content4 from "./images/anh-4-content-4.png";
+import anh5Content4 from "./images/anh-5-content-4.png";
+import anh6Content4 from "./images/anh-6-content-4.png";
+import anh7Content4 from "./images/anh-7-content-4.png";
+import anh8Content4 from "./images/anh-8-content-4.png";
+import anhBatMiFontContentOne from "./images/anh-bat-mi-font-content-one.png";
+import anhBatMiIntroduce from "./images/anh-bat-mi-introduce.png";
+import anhBatMiOneContentOne from "./images/anh-bat-mi-one-content-one.png";
+import anhBatMiThreeContentOne from "./images/anh-bat-mi-three-content-one.png";
+import anhBatMiTwoContentOne from "./images/anh-bat-mi-two-content-one.png";
+import anhDtContent7 from "./images/anh-dt-content-7.png";
+import avatar1Content4 from "./images/avatar-1-content-4.png";
+import avatar2Content4 from "./images/avatar-2-content-4.png";
+import avatar3Content4 from "./images/avatar-3-content-4.png";
+import avatar4Content4 from "./images/avatar-4-content-4.png";
+import avatar5Content4 from "./images/avatar-5-content-4.png";
+import avatar6Content4 from "./images/avatar-6-content-4.png";
+import avatar7Content4 from "./images/avatar-7-content-4.png";
+import avatar8Content4 from "./images/avatar-8-content-4.png";
+import banhNgotContentThree from "./images/banh-ngot-content-three.png";
+import banhNgotNhoContentThree from "./images/banh-ngot-nho-content-three.png";
+import hambogoContentThree from "./images/hambogo-content-three.png";
+import icon1Content4 from "./images/icon-1-content-4.png";
+import icon1Content6 from "./images/icon-1-content-6.png";
+import icon1Content7 from "./images/icon-1-content-7.png";
+import icon1Fooder from "./images/icon-1-fooder.png";
+import icon2Content4 from "./images/icon-2-content-4.png";
+import icon2Content6 from "./images/icon-2-content-6.png";
+import icon2Content7 from "./images/icon-2-content-7.png";
+import icon2Fooder from "./images/icon-2-fooder.png";
+import icon3Content6 from "./images/icon-3-content-6.png";
+import icon3Fooder from "./images/icon-3-fooder.png";
+import icon4Fooder from "./images/icon-4-fooder.png";
+import icon5Fooder from "./images/icon-5-fooder.png";
+import iconBanhContentTwo from "./images/icon-banh-content-two.png";
+import iconChuongContentTwo from "./images/icon-chuong-content-two.png";
+import iconDiaChiContentThree from "./images/icon-dia-chi-content-three.png";
+import iconDiaChiContentTwo from "./images/icon-dia-chi-content-two.png";
+import iconDiaChiIntroduce from "./images/icon-dia-chi-introduce.png";
+import iconKinhLupButtumHeader from "./images/icon-kinh-lup-buttum-header.png";
+import iconMapHeader from "./images/icon-map-header.png";
+import iconNguoiButtumHeader from "./images/icon-nguoi-buttum-header.png";
+import iconSaoContent4 from "./images/icon-sao-content-4.png";
+import iconTienContentTwo from "./images/icon-tien-content-two.png";
+import iconTuiIntroduce from "./images/icon-tui-introduce.png";
+import iconXeMayIntroduce from "./images/icon-xe-may-introduce.png";
+import image1Content8 from "./images/image-1-content-8.png";
+import image2Content8 from "./images/image-2-content-8.png";
+import image3Content8 from "./images/image-3-content-8.png";
+import logoHeader from "./images/logo-header.png";
+import monAn1Content5 from "./images/mon-an-1-content-5.png";
+import monAn2Content5 from "./images/mon-an-2-content-5.png";
+import monAn4Content5 from "./images/mon-an-4-content-5.png";
+import monAn5Content5 from "./images/mon-an-5-content-5.png";
+import monAn6Content5 from "./images/mon-an-6-content-5.png";
+import sanguycContentThree from "./images/sanguyc-content-three.png";
+import sotChamContentThree from "./images/sot-cham-content-three.png";
+import "./index.css";
 export function Welcome() {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <img
-              src={logoLight}
-              alt="React Router"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src={logoDark}
-              alt="React Router"
-              className="hidden w-full dark:block"
-            />
+    <>
+      {/* HEADER */}
+      <div className="header">
+        <div className="logo-header">
+          <img src={logoHeader} alt="" />
+          <div className="text-header">
+            <span>food</span>
+            <span>wagon</span>
           </div>
-        </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
-            </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+        </div>
+
+        <div className="menu-header">
+          <div>Deliver to:</div>
+          <img src={iconMapHeader} alt="" />
+          <div>Current Location</div>
+          <div>Mohammadpur Bus Stand, Dhaka</div>
+        </div>
+
+        <div className="buttum-header">
+          <div className="buttum-one">
+            <img src={iconKinhLupButtumHeader} alt="" />
+            <div>Search Food</div>
+          </div>
+          <div className="buttum-two">
+            <img src={iconNguoiButtumHeader} alt="" />
+            <div>Login</div>
+          </div>
         </div>
       </div>
-    </main>
+
+      {/* INTRODUCE */}
+      <div className="introduce">
+        <div className="child-1-introduce">
+          <div>Are you starving?</div>
+          <div>
+            Within a few clicks, find meals that are accessible near you
+          </div>
+          <div className="fill-in-form">
+            <div className="menu-introduce">
+              <div className="button-1-introduce">
+                <img src={iconXeMayIntroduce} alt="" />
+                <div>Delivery</div>
+              </div>
+              <div className="button-1-introduce">
+                <img src={iconTuiIntroduce} alt="" />
+                <div>Piclup</div>
+              </div>
+            </div>
+            <div className="input-button">
+              <div className="input-introduce">
+                <img src={iconDiaChiIntroduce} alt="" />
+                <input type="text" placeholder="Enter Your Address" />
+              </div>
+              <div className="button-3-introduce">
+                <img src={iconKinhLupButtumHeader} alt="" />
+                <div>Find Food</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="images-introduce">
+          <img src={anhBatMiIntroduce} alt="" />
+        </div>
+      </div>
+
+      {/* CONTENT-1 */}
+      <div className="content-1">
+        <div className="menu-1-content-1">
+          <div className="images-content-1">
+            <img src={anhBatMiOneContentOne} alt="" />
+            <div className="discount">
+              <div>15</div>
+              <div className="off">
+                <div>%</div>
+                <div>Off</div>
+              </div>
+            </div>
+          </div>
+          <div>Greys Vage</div>
+          <div>6 Days Remaining</div>
+        </div>
+
+        <div className="menu-1-content-1">
+          <div className="images-content-1">
+            <img src={anhBatMiTwoContentOne} alt="" />
+            <div className="discount">
+              <div>10</div>
+              <div className="off">
+                <div>%</div>
+                <div>Off</div>
+              </div>
+            </div>
+          </div>
+          <div>Greys Vage</div>
+          <div>6 Days Remaining</div>
+        </div>
+
+        <div className="menu-1-content-1">
+          <div className="images-content-1">
+            <img src={anhBatMiThreeContentOne} alt="" />
+            <div className="discount">
+              <div>25</div>
+              <div className="off">
+                <div>%</div>
+                <div>Off</div>
+              </div>
+            </div>
+          </div>
+          <div>Greys Vage</div>
+          <div>7 Days Remaining</div>
+        </div>
+
+        <div className="menu-1-content-1">
+          <div className="images-content-1">
+            <img src={anhBatMiFontContentOne} alt="" />
+            <div className="discount">
+              <div>20</div>
+              <div className="off">
+                <div>%</div>
+                <div>Off</div>
+              </div>
+            </div>
+          </div>
+          <div>Greys Vage</div>
+          <div>8 Days Remaining</div>
+        </div>
+      </div>
+
+      {/* CONTENT-2 */}
+      <div className="content-2">
+        <div>How does it work</div>
+
+        <div className="menu-content-2">
+          <div className="child-1-content-2">
+            <div className="images-content-2">
+              <img src={iconDiaChiContentTwo} alt="" />
+            </div>
+            <div>Select location</div>
+            <div>Choose the location where your food will be delivered.</div>
+          </div>
+
+          <div className="child-1-content-2">
+            <div className="images-content-2">
+              <img src={iconChuongContentTwo} alt="" />
+            </div>
+            <div>Choose order</div>
+            <div>Check over hundreds of menus to pick your favorite food</div>
+          </div>
+
+          <div className="child-1-content-2">
+            <div className="images-content-2">
+              <img src={iconTienContentTwo} alt="" />
+            </div>
+            <div>Pay advanced</div>
+            <div>
+              It's quick, safe, and simple. Select several methods of payment
+            </div>
+          </div>
+
+          <div className="child-1-content-2">
+            <div className="images-content-2">
+              <img src={iconBanhContentTwo} alt="" />
+            </div>
+            <div>Enjoy meals</div>
+            <div>Food is made and delivered directly to your home.</div>
+          </div>
+        </div>
+      </div>
+
+      {/* CONTENT-3 */}
+      <div className="content-3">
+        <div className="title-content-3">Popular items</div>
+        <div className="menu-content-3">
+          <div className="child-content-3">
+            <div className="image-content-3">
+              <img src={hambogoContentThree} alt="" />
+              <div className="buttom-one-content-3">&lt;</div>
+            </div>
+            <div className="content-menu">
+              <div>Cheese Burger</div>
+              <div className="adderss-content-3">
+                <img src={iconDiaChiContentThree} alt="" />
+                <div>Burger Arena</div>
+              </div>
+              <div>$3.88</div>
+              <div className="buttom-small-content-3">Order Now</div>
+            </div>
+          </div>
+
+          <div className="child-content-3">
+            <div className="image-content-3">
+              <img src={banhNgotContentThree} alt="" />
+            </div>
+            <div className="content-menu">
+              <div>Toffe's Cake</div>
+              <div className="adderss-content-3">
+                <img src={iconDiaChiContentThree} alt="" />
+                <div>Top Sticks</div>
+              </div>
+              <div>$4.00</div>
+              <div className="buttom-small-content-3">Order Now</div>
+            </div>
+          </div>
+
+          <div className="child-content-3">
+            <div className="image-content-3">
+              <img src={banhNgotNhoContentThree} alt="" />
+            </div>
+            <div className="content-menu">
+              <div>Cake World</div>
+              <div className="adderss-content-3">
+                <img src={iconDiaChiContentThree} alt="" />
+                <div>Dancake</div>
+              </div>
+              <div>$1.99</div>
+              <div className="buttom-small-content-3">Order Now</div>
+            </div>
+          </div>
+
+          <div className="child-content-3">
+            <div className="image-content-3">
+              <img src={sanguycContentThree} alt="" />
+            </div>
+            <div className="content-menu">
+              <div>Crispy Sandwitch</div>
+              <div className="adderss-content-3">
+                <img src={iconDiaChiContentThree} alt="" />
+                <div>Fastfood dine</div>
+              </div>
+              <div>$3.00</div>
+              <div className="buttom-small-content-3">Order Now</div>
+            </div>
+          </div>
+
+          <div className="child-content-3">
+            <div className="image-content-3">
+              <img src={sotChamContentThree} alt="" />
+              <div className="buttom-two-content-3">&gt;</div>
+            </div>
+            <div className="content-menu">
+              <div>Thai Soup</div>
+              <div className="adderss-content-3">
+                <img src={iconDiaChiContentThree} alt="" />
+                <div>Foody man</div>
+              </div>
+              <div>$2.79</div>
+              <div className="buttom-small-content-3">Order Now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content-4 */}
+      <div className="content-4">
+        <div className="title-content-4">Featured Restaurants</div>
+        <div className="image-menu">
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh1Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>20% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar1Content4} alt="" />
+                <div className="ratings">
+                  <div>Foodworld</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>46</div>
+                  </div>
+                </div>
+              </div>
+              <div id="buttum-button-content-4">Opens tomorrow</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh2Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>15% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar2Content4} alt="" />
+                <div className="ratings">
+                  <div>Pizzahub</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>40</div>
+                  </div>
+                </div>
+              </div>
+              <div id="buttum-button-content-4">Opens tomorrow</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh3Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>10% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar3Content4} alt="" />
+                <div className="ratings">
+                  <div>Donuts hut</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>20</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh4Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>15% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar4Content4} alt="" />
+                <div className="ratings">
+                  <div>Donuts hut</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>50</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh5Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>10% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar5Content4} alt="" />
+                <div className="ratings">
+                  <div>Ruby Tuesday</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>26</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh6Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>25% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar6Content4} alt="" />
+                <div className="ratings">
+                  <div>Kuakata Fried Chicken</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>53</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh7Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>10% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar7Content4} alt="" />
+                <div className="ratings">
+                  <div>Red Square</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>45</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+
+          <div className="product">
+            <div className="food-photos-content-4">
+              <img src={anh8Content4} alt="" />
+              <div className="buttum-content-4">
+                <div className="buttum-one-content-4">
+                  <img src={icon1Content4} alt="" />
+                  <div>10% off</div>
+                </div>
+                <div className="buttum-two-content-4">
+                  <img src={icon2Content4} alt="" />
+                  <div>Fast</div>
+                </div>
+              </div>
+            </div>
+            <div className="child-2-content-4">
+              <div className="trademark">
+                <img src={avatar8Content4} alt="" />
+                <div className="ratings">
+                  <div>Taco Bell</div>
+                  <div>
+                    <img src={iconSaoContent4} alt="" />
+                    <div>35</div>
+                  </div>
+                </div>
+              </div>
+              <div>Open Now</div>
+            </div>
+          </div>
+        </div>
+        <div>View ALL &gt;</div>
+      </div>
+
+      {/* Content-5 */}
+      <div className="content-5">
+        <div className="title-content-5">
+          <div>Search by Food</div>
+          <div className="buttom-content-5">
+            <div>
+              <a className="link" href="">
+                View ALL &gt;
+              </a>
+            </div>
+            <div className="two-buttom">
+              <div>&lt;</div>
+              <div>&gt;</div>
+            </div>
+          </div>
+        </div>
+        <div className="menu-content-5">
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn1Content5} alt="" />
+            </div>
+            <div>Pizza</div>
+          </div>
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn2Content5} alt="" />
+            </div>
+            <div>Burger</div>
+          </div>
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn1Content5} alt="" />
+            </div>
+            <div>Noodies</div>
+          </div>
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn4Content5} alt="" />
+            </div>
+            <div>Sub-sandiwch</div>
+          </div>
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn5Content5} alt="" />
+            </div>
+            <div>Chowmein</div>
+          </div>
+          <div className="child-1-content-5">
+            <div className="image-menu-content-5">
+              <img src={monAn6Content5} alt="" />
+            </div>
+            <div>Steak</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content-6 */}
+      <div className="content-6">
+        <div className="image-content-6">
+          <div className="child-content-6">
+            <img src={icon1Content6} alt="" />
+            <div>Daily Discounts</div>
+          </div>
+          <div className="column"></div>
+          <div className="child-content-6">
+            <img src={icon2Content6} alt="" />
+            <div>Live Tracing</div>
+          </div>
+          <div className="column"></div>
+          <div className="child-content-6">
+            <img src={icon3Content6} alt="" />
+            <div>Quick Delivery</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content-7 */}
+      <div className="content-7">
+        <div className="image-content-7">
+          <img src={anhDtContent7} alt="" />
+        </div>
+        <div className="title-content-7">
+          <div>Install the app</div>
+          <div>
+            It's never been easier to order food. Look for the finest discounts
+            and you'll be lost in a world of delectable food.
+          </div>
+          <div className="child-content-7">
+            <div className="buttom-content-7">
+              <img src={icon1Content7} alt="" />
+              <div className="logo-name-content-7">
+                <div>GET IT ON</div>
+                <div>Google Play</div>
+              </div>
+            </div>
+            <div className="buttom-content-7">
+              <img src={icon2Content7} alt="" />
+              <div className="logo-name-content-7">
+                <div>DOWNLOAD ON THE</div>
+                <div>App Store</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Content-8 */}
+      <div className="content-8">
+        <div className="menu-content-8">
+          <div className="title-content-8">
+            <div className="title">
+              <span>Best deals</span>
+              <span>Crispy Sandwiches</span>
+            </div>
+            <div>
+              Enjoy the large size of sandwiches. Complete perfect slice of
+              sandwiches.
+            </div>
+            <div>Proceed to order &gt;</div>
+          </div>
+          <div className="images-content-8">
+            <img src={image1Content8} alt="" />
+          </div>
+        </div>
+
+        <div className="menu-content-8">
+          <div className="images-content-8">
+            <img src={image2Content8} alt="" />
+          </div>
+          <div className="title-content-8">
+            <div className="title">
+              <span>Celebrate partieswith</span>
+              <span>Fried Chicken</span>
+            </div>
+            <div>
+              Get the best fried chicken smeared with a lip smacking lemon chili
+              flavor. Check out best deals for fried chicken.
+            </div>
+            <div>Proceed to order &gt;</div>
+          </div>
+        </div>
+
+        <div className="menu-content-8">
+          <div className="title-content-8">
+            <div className="title">
+              <span>Wanna eat hot & spicy</span>
+              <span>Pizza?</span>
+            </div>
+            <div>
+              Pair up with a friend and enjoy the hot and crispy pizza pops. Try
+              it with the best deals.
+            </div>
+            <div>Proceed to order &gt;</div>
+          </div>
+          <div className="images-content-8">
+            <img src={image3Content8} alt="" />
+          </div>
+        </div>
+      </div>
+
+      {/* Content-9 */}
+      <div className="outer-content-9">
+        <div className="content-9">
+          <div>Are you ready to order with the best deals?</div>
+          <div>Proceed to order &gt;</div>
+        </div>
+      </div>
+
+      {/* fooder */}
+      <div className="fooder">
+        <div className="content-fooder">
+          <div className="title-fooder">Our top cities</div>
+          <div className="menu-fooder">
+            <div className="child-menu-fooder">
+              <div>San Francisco</div>
+              <div>Miami</div>
+              <div>San Diego</div>
+              <div>East Bay</div>
+              <div>LongBeach</div>
+            </div>
+            <div className="child-menu-fooder">
+              <div>Los Angeles</div>
+              <div>Washington DC</div>
+              <div>Seattle</div>
+              <div>Portland</div>
+              <div>Nashville</div>
+            </div>
+            <div className="child-menu-fooder">
+              <div>New York City</div>
+              <div>Orange County</div>
+              <div>Atlanta</div>
+              <div>Charlotte</div>
+              <div>Denver</div>
+            </div>
+            <div className="child-menu-fooder">
+              <div>Chicago</div>
+              <div>Phoenix</div>
+              <div>Las Vegas</div>
+              <div>Sarcamento</div>
+              <div>Oklahoma City</div>
+            </div>
+            <div className="child-menu-fooder">
+              <div>Columbus</div>
+              <div>New Mexico</div>
+              <div>Albuqaurque</div>
+              <div>Sacramento</div>
+              <div>New orleans</div>
+            </div>
+          </div>
+        </div>
+        <div className="row"></div>
+        <div className="menu-2-fooder">
+          <div className="child-1-fooder">
+            <div className="child-menu-fooder-2">
+              <div>Company</div>
+              <div>About us</div>
+              <div>Team</div>
+              <div>Careers</div>
+              <div>Blog</div>
+            </div>
+            <div className="child-menu-fooder-2">
+              <div>Contact</div>
+              <div>Help & Support</div>
+              <div>Partner with us</div>
+              <div>Ride with</div>
+            </div>
+            <div className="child-menu-fooder-2">
+              <div>Legal</div>
+              <div>Terms & Conditions</div>
+              <div>refund & Cancellation</div>
+              <div>Privacy policy</div>
+              <div>Cookie Policy</div>
+            </div>
+          </div>
+          <div className="child-2-fooder">
+            <div>Follow Us</div>
+            <div className="icon-fooder">
+              <img src={icon1Fooder} alt="" />
+              <img src={icon2Fooder} alt="" />
+              <img src={icon3Fooder} alt="" />
+            </div>
+            <div>Receive exclusive offers in your mailbox</div>
+            <div className="input-buttom-fooder">
+              <div className="input-fooder">
+                <img src={icon4Fooder} alt="" />
+                <input
+                  className="input-fooder-small"
+                  type="email"
+                  placeholder="Enter Your email"
+                />
+              </div>
+              <div className="buttom-fooder">Subscribe</div>
+            </div>
+          </div>
+        </div>
+        <div className="row-2"></div>
+        <div className="supplementary-content">
+          <div className="all-rights-reserved">
+            <span>All rights Reserved</span>
+            <img src={icon5Fooder} alt="" />
+            <span>Your Company, 2021</span>
+          </div>
+          <div className="themewagon">
+            <span>Made with by</span>
+            <span>Themewagon</span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
-
-const resources = [
-  {
-    href: "https://reactrouter.com/docs",
-    text: "React Router Docs",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
-      >
-        <path
-          d="M9.99981 10.0751V9.99992M17.4688 17.4688C15.889 19.0485 11.2645 16.9853 7.13958 12.8604C3.01467 8.73546 0.951405 4.11091 2.53116 2.53116C4.11091 0.951405 8.73546 3.01467 12.8604 7.13958C16.9853 11.2645 19.0485 15.889 17.4688 17.4688ZM2.53132 17.4688C0.951566 15.8891 3.01483 11.2645 7.13974 7.13963C11.2647 3.01471 15.8892 0.951453 17.469 2.53121C19.0487 4.11096 16.9854 8.73551 12.8605 12.8604C8.73562 16.9853 4.11107 19.0486 2.53132 17.4688Z"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    href: "https://rmx.as/discord",
-    text: "Join Discord",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="20"
-        viewBox="0 0 24 20"
-        fill="none"
-        className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
-      >
-        <path
-          d="M15.0686 1.25995L14.5477 1.17423L14.2913 1.63578C14.1754 1.84439 14.0545 2.08275 13.9422 2.31963C12.6461 2.16488 11.3406 2.16505 10.0445 2.32014C9.92822 2.08178 9.80478 1.84975 9.67412 1.62413L9.41449 1.17584L8.90333 1.25995C7.33547 1.51794 5.80717 1.99419 4.37748 2.66939L4.19 2.75793L4.07461 2.93019C1.23864 7.16437 0.46302 11.3053 0.838165 15.3924L0.868838 15.7266L1.13844 15.9264C2.81818 17.1714 4.68053 18.1233 6.68582 18.719L7.18892 18.8684L7.50166 18.4469C7.96179 17.8268 8.36504 17.1824 8.709 16.4944L8.71099 16.4904C10.8645 17.0471 13.128 17.0485 15.2821 16.4947C15.6261 17.1826 16.0293 17.8269 16.4892 18.4469L16.805 18.8725L17.3116 18.717C19.3056 18.105 21.1876 17.1751 22.8559 15.9238L23.1224 15.724L23.1528 15.3923C23.5873 10.6524 22.3579 6.53306 19.8947 2.90714L19.7759 2.73227L19.5833 2.64518C18.1437 1.99439 16.6386 1.51826 15.0686 1.25995ZM16.6074 10.7755L16.6074 10.7756C16.5934 11.6409 16.0212 12.1444 15.4783 12.1444C14.9297 12.1444 14.3493 11.6173 14.3493 10.7877C14.3493 9.94885 14.9378 9.41192 15.4783 9.41192C16.0471 9.41192 16.6209 9.93851 16.6074 10.7755ZM8.49373 12.1444C7.94513 12.1444 7.36471 11.6173 7.36471 10.7877C7.36471 9.94885 7.95323 9.41192 8.49373 9.41192C9.06038 9.41192 9.63892 9.93712 9.6417 10.7815C9.62517 11.6239 9.05462 12.1444 8.49373 12.1444Z"
-          strokeWidth="1.5"
-        />
-      </svg>
-    ),
-  },
-];
